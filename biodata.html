@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Biodata Form</title>
+
+    <style>
+
+        body {
+            background-color: AliceBlue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+        }
+
+        /* Form Container */
+
+        .container {
+            background-color: White;
+            width: 450px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 20px LightGray;
+        }
+
+        /* Heading */
+
+        h2 {
+            text-align: center;
+            color: MidnightBlue;
+            margin-bottom: 25px;
+        }
+
+        /* Labels */
+
+        label {
+            display: block;
+            color: DarkSlateGray;
+            margin-top: 15px;
+            margin-bottom: 7px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        /* Input Boxes */
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 11px;
+            border: 1px solid Silver;
+            border-radius: 7px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        /* Input Focus */
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border: 2px solid DodgerBlue;
+        }
+
+        /* Radio and Checkbox */
+
+        .option {
+            margin-top: 10px;
+            color: DarkSlateGray;
+        }
+
+        .option label {
+            display: inline;
+            font-weight: normal;
+            margin-left: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: RoyalBlue;
+        }
+
+        /* Textarea */
+
+        textarea {
+            resize: vertical;
+        }
+
+        /* Buttons */
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-top: 25px;
+        }
+
+        .submit {
+            background-color: RoyalBlue;
+            color: White;
+        }
+
+        .reset {
+            background-color: Gainsboro;
+            color: Black;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 550px) {
+            body {
+                padding: 15px;
+            }
+
+            .container {
+                width: auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Student Biodata Form</h2>
+
+        <form>
+
+            <label>First Name</label>
+            <input type="text" placeholder="Enter your first name" required>
+
+            <label>Last Name</label>
+            <input type="text" placeholder="Enter your last name">
+
+            <label>Date of Birth</label>
+            <input type="date">
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter password" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Address</label>
+            <textarea rows="3" placeholder="Enter your address"></textarea>
+
+            <label>Blood Group</label>
+            <select>
+                <option>Select Blood Group</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>O+</option>
+                <option>O-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+            </select>
+
+            <label>Gender</label>
+
+            <div class="option">
+                <input type="radio" name="gender">
+                <label>Male</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" name="gender">
+                <label>Female</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" name="gender">
+                <label>Others</label>
+            </div>
+
+            <label>Languages Known</label>
+
+            <div class="option">
+                <input type="checkbox">
+                <label>Tamil</label>
+            </div>
+
+            <div class="option">
+                <input type="checkbox">
+                <label>English</label>
+            </div>
+
+            <div class="option">
+                <input type="checkbox">
+                <label>Hindi</label>
+            </div>
+
+            <label>Technical Skills</label>
+
+            <div class="option">
+                <input type="checkbox">
+                <label>C</label>
+            </div>
+
+            <div class="option">
+                <input type="checkbox">
+                <label>C++</label>
+            </div>
+
+            <div class="option">
+                <input type="checkbox">
+                <label>Python</label>
+            </div>
+
+            <button type="submit" class="submit">Submit</button>
+
+            <button type="reset" class="reset">Reset</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
