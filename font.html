@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Properties</title>
+
+    <style>
+        body {
+            background-color: #1b2434;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+        }
+
+        .code-box {
+            background-color: #0d1117;
+            border: 2px solid #00bcd4;
+            padding: 25px;
+            width: 50%;
+        }
+
+        .code-box p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 1.6;
+            letter-spacing: 2px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .properties {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            width: 50%;
+        }
+
+        .property {
+            padding: 15px;
+            border: 2px solid;
+            background-color: #172033;
+        }
+
+        .property h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        .property p {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .blue {
+            border-color: #64a9e8;
+        }
+
+        .blue h3 {
+            color: #64a9e8;
+        }
+
+        .cyan {
+            border-color: #00d9e8;
+        }
+
+        .cyan h3 {
+            color: #00d9e8;
+        }
+
+        .green {
+            border-color: #9bc77e;
+        }
+
+        .green h3 {
+            color: #9bc77e;
+        }
+
+        .pink {
+            border-color: #e58bb2;
+        }
+
+        .pink h3 {
+            color: #e58bb2;
+        }
+
+        .yellow {
+            border-color: #f5d45c;
+        }
+
+        .yellow h3 {
+            color: #f5d45c;
+        }
+
+        .orange {
+            border-color: #f28c28;
+        }
+
+        .orange h3 {
+            color: #f28c28;
+        }
+
+        .lightgreen {
+            border-color: #65d6a6;
+        }
+
+        .lightgreen h3 {
+            color: #65d6a6;
+        }
+
+        .red {
+            border-color: #d8788a;
+        }
+
+        .red h3 {
+            color: #d8788a;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .code-box,
+            .properties {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Left side: CSS example -->
+        <div class="code-box">
+            <p>
+                p { <br>
+                &nbsp;&nbsp;font-family: "Arial", sans-serif;<br>
+                &nbsp;&nbsp;font-size: 16px;<br>
+                &nbsp;&nbsp;font-weight: bold;<br>
+                &nbsp;&nbsp;font-style: italic;<br>
+                &nbsp;&nbsp;line-height: 1.6;<br>
+                &nbsp;&nbsp;letter-spacing: 2px;<br>
+                &nbsp;&nbsp;text-align: center;<br>
+                &nbsp;&nbsp;text-transform: uppercase;<br>
+                }
+            </p>
+        </div>
+
+        <!-- Right side: CSS properties -->
+        <div class="properties">
+
+            <div class="property blue">
+                <h3>font-family</h3>
+                <p>Font name(s); list fallbacks</p>
+            </div>
+
+            <div class="property cyan">
+                <h3>line-height</h3>
+                <p>Spacing between lines (1.5 recommended)</p>
+            </div>
+
+            <div class="property green">
+                <h3>font-size</h3>
+                <p>px, em, rem, %, vw</p>
+            </div>
+
+            <div class="property pink">
+                <h3>text-align</h3>
+                <p>left / center / right / justify</p>
+            </div>
+
+            <div class="property yellow">
+                <h3>font-weight</h3>
+                <p>100–900 or bold / normal</p>
+            </div>
+
+            <div class="property orange">
+                <h3>text-decoration</h3>
+                <p>none / underline / line-through</p>
+            </div>
+
+            <div class="property lightgreen">
+                <h3>font-style</h3>
+                <p>normal / italic / oblique</p>
+            </div>
+
+            <div class="property red">
+                <h3>text-transform</h3>
+                <p>uppercase / lowercase / capitalize</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
